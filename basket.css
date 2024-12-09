@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Header Navigation */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  /* Highlight Section */
+#highlight {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3em; /* Aumenta el espacio alrededor */
+    background-color: #eaeaea;
+    gap: 2em; /* Espacio entre la imagen y el texto */
+  }
+  
+  #highlight img {
+    max-width: 50%;
+    height: auto;
+    flex: 1 1 400px; /* La imagen ocupa más espacio */
+    border-radius: 10px;
+  }
+  
+  #highlight .description {
+    max-width: 600px; /* Aumenta el espacio para el texto */
+    flex: 1 1 400px;
+    text-align: center;
+  }
+  
+  #highlight h1 {
+    font-size: 2.5rem; /* Aumenta el tamaño del título */
+    margin-bottom: 1.5rem;
+  }
+  
+  #highlight p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    line-height: 1.8; /* Mejora la legibilidad */
+    margin-top: 1rem;
+  }
+  
+  
+  /* Product Gallery */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1em;
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .gallery div {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 0.5em;
+  }
+  
+  .gallery div img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .gallery div h3 {
+    font-size: 1rem;
+    margin: 0.5em 0;
+  }
+  
+  .gallery div p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* About Section */
+  #about {
+    padding: 2em;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #about p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    header nav ul li a {
+      font-size: 0.9rem;
+    }
+  
+    #highlight h1 {
+      font-size: 1.5rem;
+    }
+  
+    #highlight p {
+      font-size: 0.9rem;
+    }
+  
+    .gallery div h3 {
+      font-size: 0.9rem;
+    }
+  
+    .gallery div p {
+      font-size: 0.8rem;
+    }
+  }
+  
